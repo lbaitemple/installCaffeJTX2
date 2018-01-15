@@ -37,6 +37,7 @@ cmake -DCUDA_USE_STATIC_CUDA_RUNTIME=OFF
 # Include the hdf5 directory for the includes; 16.04 previously had issues for some reason
 # The TX2 seems to handle this correctly now
 # echo "INCLUDE_DIRS += /usr/include/hdf5/serial/" >> Makefile.config
+#echo "LIBRARY_DIRS += /usr/lib/aarch64-linux-gnu/hdf5/serial/" >> Makefile.config
 /bin/echo -e "\e[1;32mCompiling Caffe\e[0m"
 make -j6 all
 # Run the tests to make sure everything works
